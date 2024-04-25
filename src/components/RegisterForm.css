@@ -1,0 +1,95 @@
+/* RegisterForm.css */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+}
+
+.form-container2 {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  height: fit-content;
+  width: 600px;
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 30px;
+}
+
+.form-container2 input,
+.form-container2 button {
+  width: 100%;
+  border-bottom: 1px solid #818181; 
+
+}
+.form-container2 button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000a14;
+  color: #fff;
+  border: 1px solid #000000; 
+
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container2 button:hover {
+  background-color: #ffffff;
+  color: #000a14;
+  border: 1px solid #000000; 
+}
+.form-container2 input[type="file"] {
+  grid-column: 2; 
+  
+}
+.form-container2 input[type="file"]::-webkit-file-upload-button {
+  padding: 7px; 
+  cursor: pointer; 
+  background-color: #000a14; 
+  color: #fff; 
+  border: none; 
+  font-size: 1.8vh;
+  width: 100px;
+  border: 1px solid #000000; 
+  border-radius: 2px;
+  transition: background-color 0.3s;
+}
+
+/* Style the "Choose File" button on hover */
+.form-container2 input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #ffffff; 
+  color: #000a14;
+  border: 1px solid #000000; 
+}
+
+/* Set the grid column span for other input fields */
+.form-container2 input[type="text"],
+.form-container2 input[type="date"],
+.form-container2 input[type="number"],
+.form-container2 input[type="email"],
+.form-container2 input[type="password"] {
+  grid-column: span 1; 
+}
+@media screen and (max-width: 600px) {
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+  }
+  
+  .form-container2 {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    height: fit-content;
+    width: 500px; 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
