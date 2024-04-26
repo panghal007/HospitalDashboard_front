@@ -55,7 +55,7 @@ const Dashboard = () => {
   // Function to handle viewing certificate
   const handleViewCertificate = (certificate) => {
     // Construct the URL for the certificate based on its filename and the server URL
-    const certificateUrl = `https://hospitaldashboard-back.onrender.com/uploads/${certificate}`;
+    const certificateUrl = `https://hospitaldashboard-back.onrender.com/public/${certificate}`;
 
     // Open the certificate URL in a new tab
     window.open(certificateUrl, "_blank");
